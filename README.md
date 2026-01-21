@@ -1,4 +1,4 @@
-# Slooze - Product Management System
+# Product Management System
 
 A comprehensive full-stack product management system built with Next.js and Node.js, featuring role-based access control, real-time inventory tracking, and an intuitive dashboard interface.
 
