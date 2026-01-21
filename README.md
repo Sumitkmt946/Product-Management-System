@@ -350,42 +350,13 @@ npm run seed     # Seed database with sample data
 npm test         # Run tests
 ```
 
-## 🐛 Troubleshooting
-
-### Port Already in Use
-If you get an error that port 5000 or 3000 is already in use:
-
-**Windows:**
-```bash
-# Find process using port 5000
-netstat -ano | findstr :5000
-
-# Kill the process (replace PID with actual process ID)
-taskkill /F /PID <PID>
-```
-
-**Linux/Mac:**
-```bash
-# Find and kill process using port 5000
-lsof -ti:5000 | xargs kill -9
-```
-
-### MongoDB Connection Issues
-- Ensure MongoDB is running locally or update `MONGODB_URI` in `.env`
-- Check MongoDB connection string format
-- Verify network connectivity for cloud MongoDB instances
-
-### Image Upload Issues
-- Ensure `uploads/` directory exists in backend
-- Check file size limits (max 5MB)
-- Verify supported formats: JPEG, PNG, GIF, WebP
 
 ## 📝 License
 
 This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
-
+Sumit Kumawat
 Created as part of the Slooze Product Management System assignment.
 
 ## 🤝 Contributing
@@ -398,8 +369,6 @@ Created as part of the Slooze Product Management System assignment.
 
 ## 📞 Support
 
-For support and queries, please open an issue in the repository.
+For support and queries summitkumawat888@gmail.com, please open an issue in the repository.
 
 ---
-
-**Built with ❤️ using Next.js and Node.js**
