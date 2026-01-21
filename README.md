@@ -2,7 +2,8 @@
 
 A comprehensive full-stack product management system built with Next.js and Node.js, featuring role-based access control, real-time inventory tracking, and an intuitive dashboard interface.
 
-![Login Page](C:/Users/ashok/.gemini/antigravity/brain/d3c08dbd-66f3-4eb1-8025-91510e64e24d/login_page_1769022008039.png)
+<img width="1352" height="681" alt="image" src="https://github.com/user-attachments/assets/b795b171-a21b-43b6-b1aa-9dfefa2164c1" />
+
 
 ## 🚀 Features
 
@@ -250,17 +251,23 @@ After seeding the database, you can use these credentials:
 
 ### Login Page
 The login interface with role-based authentication.
-
-![Login Page](C:/Users/ashok/.gemini/antigravity/brain/d3c08dbd-66f3-4eb1-8025-91510e64e24d/login_page_1769022008039.png)
+<img width="1352" height="681" alt="image" src="https://github.com/user-attachments/assets/026b1111-b1f8-48a5-9d09-0c320258f818" />
 
 ### Manager Dashboard
+<img width="1359" height="683" alt="image" src="https://github.com/user-attachments/assets/d7284e52-fd22-43eb-98d3-981184ebe701" />
 Interactive dashboard with analytics, charts, and statistics (Manager only).
 
 ### Products Management
+<img width="1363" height="678" alt="image" src="https://github.com/user-attachments/assets/72c2c7d4-63bd-4f3e-abea-5b1ab66e3f6f" />
 Complete product listing with search, filter, and CRUD operations.
 
 ### Add Product
+<img width="1348" height="690" alt="image" src="https://github.com/user-attachments/assets/d9210fa5-7e5c-4b8d-9d33-39b51526e775" />
 Intuitive form for adding new products with image upload and draft functionality.
+
+### Dark Mode
+<img width="1346" height="681" alt="image" src="https://github.com/user-attachments/assets/a9739ce1-b429-4b31-952e-2535c5027778" />
+
 
 ## 🔒 Security Features
 
