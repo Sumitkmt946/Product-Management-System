@@ -17,13 +17,26 @@ export default function LoginPage() {
   const { login } = useAuth();
   const router = useRouter();
 
+  const fillDemoCredentials = (demoRole: "MANAGER" | "STORE_KEEPER") => {
+    if (demoRole === "MANAGER") {
+      setEmail("manager@slooze.com");
+      setPassword("password123");
+      setRole("MANAGER");
+    } else {
+      setEmail("keeper@slooze.com");
+      setPassword("password123");
+      setRole("STORE_KEEPER");
+    }
+    setError("");
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/auth/login", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password, role }),
@@ -190,6 +203,32 @@ export default function LoginPage() {
                 Sign up for free
               </Link>
             </p>
+
+            {/* Demo Credentials Section */}
+            <div className="mt-6 p-4 rounded-lg bg-indigo-50 border border-indigo-100 dark:bg-indigo-950/30 dark:border-indigo-900/50">
+              <p className="text-sm font-medium text-indigo-700 dark:text-indigo-300 mb-3 text-center">
+                🔑 Demo Credentials (Quick Fill)
+              </p>
+              <div className="flex gap-3">
+                <button
+                  type="button"
+                  onClick={() => fillDemoCredentials("MANAGER")}
+                  className="flex-1 py-2 px-3 text-xs font-medium rounded-md bg-indigo-600 text-white hover:bg-indigo-700 transition-colors"
+                >
+                  👔 Manager Login
+                </button>
+                <button
+                  type="button"
+                  onClick={() => fillDemoCredentials("STORE_KEEPER")}
+                  className="flex-1 py-2 px-3 text-xs font-medium rounded-md bg-emerald-600 text-white hover:bg-emerald-700 transition-colors"
+                >
+                  📦 Store Keeper Login
+                </button>
+              </div>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 text-center">
+                Click a button above to auto-fill credentials, then hit Sign in
+              </p>
+            </div>
           </form>
         </div>
       </div>

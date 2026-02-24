@@ -41,56 +41,46 @@ const seedData = async () => {
       {
         name: 'Wireless Bluetooth Headphones',
         description: 'High-quality wireless headphones with noise cancellation and 30-hour battery life.',
-        category: 'Electronics',
+        category: 'electronics',
         price: 199.99,
         stock: 50,
-        minStock: 10,
         sku: 'WBH-001',
-        barcode: '1234567890123',
         createdBy: users[0]._id
       },
       {
         name: 'Ergonomic Office Chair',
         description: 'Comfortable office chair with lumbar support and adjustable height.',
-        category: 'Furniture',
+        category: 'home',
         price: 299.99,
         stock: 25,
-        minStock: 5,
         sku: 'EOC-002',
-        barcode: '1234567890124',
         createdBy: users[0]._id
       },
       {
         name: 'Organic Coffee Beans',
         description: 'Premium organic coffee beans from Ethiopia, medium roast.',
-        category: 'Food & Beverage',
+        category: 'other',
         price: 24.99,
         stock: 100,
-        minStock: 20,
         sku: 'OCB-003',
-        barcode: '1234567890125',
         createdBy: users[1]._id
       },
       {
         name: 'Yoga Mat',
         description: 'Non-slip yoga mat made from eco-friendly materials, 6mm thick.',
-        category: 'Sports & Fitness',
+        category: 'sports',
         price: 39.99,
         stock: 75,
-        minStock: 15,
         sku: 'YM-004',
-        barcode: '1234567890126',
         createdBy: users[1]._id
       },
       {
         name: 'Smartphone Case',
         description: 'Protective case for iPhone 15 with wireless charging support.',
-        category: 'Accessories',
+        category: 'electronics',
         price: 29.99,
         stock: 200,
-        minStock: 30,
         sku: 'SC-005',
-        barcode: '1234567890127',
         createdBy: users[0]._id
       }
     ]);

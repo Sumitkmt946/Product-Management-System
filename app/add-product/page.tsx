@@ -61,7 +61,7 @@ export default function AddProduct() {
       formData.append("description", productData.description);
       formData.append("stock", productData.stock || "0");
 
-      const response = await fetch("http://localhost:5000/api/products", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
